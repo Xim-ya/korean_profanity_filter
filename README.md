@@ -1,6 +1,6 @@
 <h1 align="center">Korean Profanity Filter</h1>
 <p align="center"><img src="https://github.com/MakeFrog/TechTalk/assets/75591730/f53a1441-717e-40b9-9fae-8fda1629a780"/></p>
-<p align="center">Korean Profanity Filter 패키지는 문자열을 검사하여 욕설·비속어를 필터링할 수 있도록 돕습니다. 정규식을 기반으로 동작하기 때문에 동일한 의미를 가진 다양한 형태의 욕설과 비속어를 효과적으로 식별할 수 있습니다.</p><br>
+<p align="center">Korean Profanity Filter 패키지는 문자열을 검사하여 욕설·비속어를 식별할 수 있도록 돕습니다. 정규식을 기반으로 동작하기 때문에 동일한 의미를 가진 다양한 형태의 욕설과 비속어를 효과적으로 필터링할 수 있습니다.</p><br>
 
 
 <p align="center">
@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/pub/v/korean_profanity_filter"
       alt="Pub Package"/>
   </a>
-  <a href="https://opensource.org/licenses/MIT">
+  <a href="https://opensource.org/licenses/MIT">    
     <img src="https://img.shields.io/github/license/aagarwal1012/animated-text-kit?color=red"
       alt="License: MIT" />
   </a>
@@ -125,12 +125,14 @@ print(fWords); // 비속어를 나열합니다 : 🤬 🤬 🤬 🤬
 
 비속어를 다른 문자열로 대체하려면 `replaceBadWords`를 활용하세요. 이 함수는 비속어를 지정한 문자열로 대체하여 정제된 문자열를 생성합니다.
 
+<br/>
+
 # Customize
 
 해당 패키지는 기본적으로 `정규 표현식`을 사용하여 욕설·비속어 감지합니다.
 
 ```dart
-ProfanityFilter.addPattern('빵꾸똥꾸|멍청아' ); // 추가 정규식 패턴 정의
+ProfanityFilter.addPattern('빵꾸똥꾸|멍청아'); // 추가 정규식 패턴 정의
 
 const String text0 = '야 이 빵꾸똥꾸야';
 print(text.containsBadWords); // true
@@ -142,7 +144,7 @@ print(text1.containsBadWords); // true
 추가로 필터링 로직을 적용하고 싶은 욕설·비속어가 있다면 `ProfanityFilter`의 `addPattern` 메소드를 사용하여 정규식 패턴을 추가로 정의해 주세요.
 
 
-<br/>
+<br/>   
 
 # Reference
 
