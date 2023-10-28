@@ -1,5 +1,5 @@
 name: korean_profanity_filter
-description: A new Flutter project.
+description: 욕설·비속어를 효과적으로 식별할 수 있도록 도와주는 패키지(한국어 지원)
 version: 1.0.0
 homepage: https://github.com/Xim-ya/korean_profanity_filter
 
